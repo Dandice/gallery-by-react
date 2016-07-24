@@ -54,6 +54,9 @@ module.exports = {
       test: /\.json$/,
       loader: 'json-loader'
     }, {
+        test: /\.less$/,
+        loader: 'style-loader!css-loader!less-loader!autoprefixer-loader?{browsers:["iOS >= 7","Android >= 4.0","last 2 Chrome versions","last 2 Safari versions"]}'
+    }, {
       test: /\.(png|jpg|woff|woff2|eot|ttf|svg)$/,
       loader: 'url-loader?limit=8192'
     }]

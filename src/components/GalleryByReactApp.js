@@ -4,7 +4,7 @@ var React = require('react/addons');
 
 // CSS
 require('normalize.css');
-require('../styles/main.scss');
+require('../styles/main.less');
 
 // 获取图片相关的数据
 var imageDatas = require('../data/imageDatas.json');
